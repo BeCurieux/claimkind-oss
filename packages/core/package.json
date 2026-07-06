@@ -1,0 +1,26 @@
+{
+  "name": "@claimkind/core",
+  "version": "0.1.0",
+  "description": "Deterministic, citation-backed compliance lint engine. Rules decide; LLMs only assist.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": ["compliance", "lint", "greenwashing", "claims", "accc", "ftc", "tga"],
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "STATUS": "SYNTHETIC demo pack — fabricated rules and citations for demonstrating the CLI only. NOT a real rule pack.",
+  "name": "demo",
+  "version": "2026.1",
+  "jurisdiction": "AU",
+  "ruleCount": 3,
+  "changelog": "./CHANGELOG.md",
+  "licence": "MIT"
+}
