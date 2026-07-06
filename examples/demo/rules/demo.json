@@ -1,0 +1,72 @@
+[
+  {
+    "id": "DEMO-001",
+    "pack": "demo",
+    "jurisdiction": "AU",
+    "category": "environmental",
+    "severity": "high",
+    "title": "Vague unqualified green claim",
+    "rationale": "Unqualified environmental adjectives mislead without substantiation.",
+    "triggers": [{ "kind": "literal", "value": "eco-friendly" }],
+    "exceptions": [{ "kind": "literal", "value": "not eco-friendly" }],
+    "enforcement": [
+      {
+        "regulator": "ACCC",
+        "action": "DEMO synthetic action (not real)",
+        "date": "2020-01-01",
+        "url": "https://example.test/demo-001"
+      }
+    ],
+    "remediation": "State the specific, verifiable environmental benefit.",
+    "examples": {
+      "violating": ["Our eco-friendly water bottle"],
+      "compliant": ["Made from 100% recycled PET"]
+    }
+  },
+  {
+    "id": "DEMO-002",
+    "pack": "demo",
+    "jurisdiction": "AU",
+    "category": "environmental",
+    "severity": "critical",
+    "title": "Absolute carbon neutrality claim",
+    "rationale": "Absolute neutrality claims require verified offsetting evidence.",
+    "triggers": [{ "kind": "regex", "value": "carbon\\s+neutral" }],
+    "enforcement": [
+      {
+        "regulator": "ACCC",
+        "action": "DEMO synthetic action (not real)",
+        "date": "2021-06-01",
+        "url": "https://example.test/demo-002"
+      }
+    ],
+    "remediation": "Disclose the offsetting standard and scope.",
+    "examples": {
+      "violating": ["We are carbon neutral"],
+      "compliant": ["We measure our carbon emissions"]
+    }
+  },
+  {
+    "id": "DEMO-003",
+    "pack": "demo",
+    "jurisdiction": "AU",
+    "category": "environmental",
+    "severity": "medium",
+    "title": "Unqualified 'natural' proximity claim",
+    "rationale": "'100%' near 'natural' overstates purity.",
+    "triggers": [{ "kind": "proximity", "value": "100% ~2 natural" }],
+    "enforcement": [
+      {
+        "regulator": "ACCC",
+        "action": "DEMO synthetic action (not real)",
+        "date": "2022-03-01",
+        "url": "https://example.test/demo-003"
+      }
+    ],
+    "remediation": "Qualify what proportion is natural and by what measure.",
+    "examples": {
+      "violating": ["100% pure natural formula"],
+      "compliant": ["Contains natural botanical extracts"]
+    }
+  }
+]

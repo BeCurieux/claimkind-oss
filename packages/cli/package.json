@@ -1,0 +1,20 @@
+{
+  "name": "@claimkind/cli",
+  "version": "0.1.0",
+  "description": "ClaimKind CLI — run the compliance lint engine over files in CI or locally.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "claimkind": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@claimkind/core": "0.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
