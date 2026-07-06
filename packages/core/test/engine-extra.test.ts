@@ -23,11 +23,18 @@ const packOf = (name: string, version: string, rules: ClaimRule[]): LoadedPack =
 });
 
 describe("engine — extra behaviour", () => {
-  it("skips draft rules entirely", async () => {
+  it("skips draft rules entirely by default", async () => {
     const pack = packOf("x", "2026.1", [baseRule({ draft: true })]);
     const r = await lint("this is greenwash", { packs: [pack] });
     expect(r.violations).toHaveLength(0);
     expect(r.stats.rulesEvaluated).toBe(0);
+  });
+
+  it("evaluates draft rules when includeDrafts is set (preview mode)", async () => {
+    const pack = packOf("x", "2026.1", [baseRule({ draft: true })]);
+    const r = await lint("this is greenwash", { packs: [pack], includeDrafts: true });
+    expect(r.violations.map((v) => v.ruleId)).toEqual(["X-1"]);
+    expect(r.stats.rulesEvaluated).toBe(1);
   });
 
   it("merges pack versions across multiple packs", async () => {

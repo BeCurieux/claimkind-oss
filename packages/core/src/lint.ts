@@ -18,7 +18,7 @@ import type {
 
 export async function lint(text: string, options: LintOptions): Promise<LintResult> {
   const started = now();
-  const { packs, category, context, llmAdapter } = options;
+  const { packs, category, context, llmAdapter, includeDrafts } = options;
 
   const violations: Violation[] = [];
   const packVersions: Record<string, string> = {};
@@ -35,7 +35,7 @@ export async function lint(text: string, options: LintOptions): Promise<LintResu
   for (const pack of packs) {
     packVersions[pack.manifest.name] = pack.manifest.version;
     for (const rule of pack.rules) {
-      if (rule.draft) continue; // draft rules never lint
+      if (rule.draft && !includeDrafts) continue; // draft rules never lint in production
       if (category && rule.category !== category) continue;
       rulesEvaluated++;
 

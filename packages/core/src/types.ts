@@ -104,6 +104,12 @@ export interface LintOptions {
   context?: LintContext;
   /** Optional; absence = a fully deterministic run. */
   llmAdapter?: LlmAdapter;
+  /**
+   * Evaluate `draft: true` rules too. Default false — production never lints
+   * unreviewed rules. Intended only for authoring/preview surfaces that clearly
+   * label draft output as not-yet-reviewed.
+   */
+  includeDrafts?: boolean;
 }
 
 export interface Violation {
