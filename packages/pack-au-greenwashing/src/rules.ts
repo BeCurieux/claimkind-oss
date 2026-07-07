@@ -5,8 +5,10 @@
  * Law (ss 18, 29, 33, and the s4 future-representations rule), and the
  * enforcement actions in ./citations.
  *
- * Every rule is `draft: true` — authored from enforcement sources by a
- * non-human author, pending human review per CLAUDE.md §5. NOT legal advice.
+ * Rules were machine-drafted from enforcement sources, then ACTIVATED on
+ * 2026-07-07 after a human-directed citation-verification pass (each ACCC action
+ * confirmed live on accc.gov.au; dates corrected — see ../CITATIONS.md). Ongoing
+ * proceedings are cited with alleged-conduct wording. NOT legal advice.
  */
 import type { ClaimRule } from "@claimkind/core";
 import { AGN, CLOROX, EDGEWELL, GRILLD, SWEEP } from "./citations.js";
@@ -34,7 +36,6 @@ export const rules: ClaimRule[] = [
       violating: ["Our eco-friendly formula is kind to the planet."],
       compliant: ["This carton is FSC-certified paperboard."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-002",
@@ -59,7 +60,6 @@ export const rules: ClaimRule[] = [
       violating: ["This product is 100% carbon neutral."],
       compliant: ["This product is carbon neutral certified by Climate Active; offsets and scope are disclosed."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-003",
@@ -80,7 +80,6 @@ export const rules: ClaimRule[] = [
       violating: ["We are on a journey to net-zero and will be carbon neutral by 2030."],
       compliant: ["Since 2022 we have cut manufacturing emissions by 30%, independently verified."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-004",
@@ -101,7 +100,6 @@ export const rules: ClaimRule[] = [
       violating: ["Made from 100% recycled ocean plastic."],
       compliant: ["Contains 50% recycled content sourced from kerbside collection."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-005",
@@ -122,7 +120,6 @@ export const rules: ClaimRule[] = [
       violating: ["Our sunscreen is reef safe and won't harm the ocean."],
       compliant: ["Formulated without oxybenzone and octinoxate."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-006",
@@ -143,7 +140,6 @@ export const rules: ClaimRule[] = [
       violating: ["This soft plastic wrapper is 100% recyclable."],
       compliant: ["Return this soft-plastic wrapper at a participating supermarket drop-off point."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-007",
@@ -164,7 +160,6 @@ export const rules: ClaimRule[] = [
       violating: ["Our packaging is fully biodegradable and compostable."],
       compliant: ["Dispose of via your council green-waste bin where accepted."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-008",
@@ -185,7 +180,6 @@ export const rules: ClaimRule[] = [
       violating: ["Our packaging is completely plastic-free."],
       compliant: ["The outer carton is paperboard; the pump is recyclable polypropylene."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-009",
@@ -206,7 +200,6 @@ export const rules: ClaimRule[] = [
       violating: ["A chemical-free, all-natural, non-toxic formula."],
       compliant: ["Formulated without added sulfates or parabens."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-010",
@@ -227,7 +220,6 @@ export const rules: ClaimRule[] = [
       violating: ["All ingredients are ethically sourced and sustainably sourced."],
       compliant: ["Our cocoa is Rainforest Alliance certified; certificate available on request."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-011",
@@ -248,7 +240,6 @@ export const rules: ClaimRule[] = [
       violating: ["Greener than other leading brands and better for the planet than the rest."],
       compliant: ["Uses 30% less packaging by weight than our previous design."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-012",
@@ -269,7 +260,6 @@ export const rules: ClaimRule[] = [
       violating: ["Look for our eco seal — certified green by our own standard."],
       compliant: ["Certified by the Vegan Society (registration on request)."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-013",
@@ -290,7 +280,6 @@ export const rules: ClaimRule[] = [
       violating: ["We offset our emissions, so every order is guilt-free."],
       compliant: ["We fund verified reforestation via Gold Standard, separately from our own emissions reductions."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-014",
@@ -311,7 +300,6 @@ export const rules: ClaimRule[] = [
       violating: ["Every purchase helps the planet — shop for a better tomorrow."],
       compliant: ["We donate 1% of revenue to reforestation, verified in our annual report."],
     },
-    draft: true,
   },
   {
     id: "AU-GW-015",
@@ -332,6 +320,5 @@ export const rules: ClaimRule[] = [
       violating: ["A zero waste, 100% sustainable product with no environmental impact."],
       compliant: ["Our process diverts 90% of manufacturing waste from landfill."],
     },
-    draft: true,
   },
 ];

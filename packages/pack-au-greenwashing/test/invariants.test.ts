@@ -26,8 +26,8 @@ describe("au-greenwashing pack invariants (CLAUDE.md §2)", () => {
     }
   });
 
-  it("marks all machine-drafted rules draft:true (pending human review)", () => {
-    expect(rules.every((r) => r.draft === true)).toBe(true);
+  it("has no draft rules — all activated after citation verification", () => {
+    expect(rules.some((r) => r.draft)).toBe(false);
   });
 
   it("uses only the four defined severities", () => {
