@@ -10,5 +10,10 @@ sustainability claims" guidance and the Australian Consumer Law (ss 18, 29, 33,
 s4). Enforcement citations: Clorox/GLAD, Edgewell, the ACCC greenwashing
 internet sweep, Australian Gas Networks, and Grill'd.
 
-All rules ship `draft: true` pending a human citation/verification pass
-(see `../../CITATIONS.md`). Not legal advice.
+**Activated 2026-07-07** after a citation-verification pass against accc.gov.au:
+all 5 ACCC actions confirmed live and every `date` corrected to its media-release
+date (two carried the wrong year — Clorox `2024-04-18`→`2025-04-14`, Grill'd
+`2024`→`2026-06-16`; three year-only dates tightened). Clorox is a final judgment
+($8.25m, admitted); Edgewell, Australian Gas Networks and Grill'd are cited as
+ongoing proceedings (alleged conduct). All 15 rules are now active. Legal review
+of rule wording remains advisable. Not legal advice — see `../../CITATIONS.md`.
